@@ -7,7 +7,8 @@ import os
 
 app = Flask(__name__)
 Bootstrap(app)
-model = pickle.load(open('model.pkl','rb'))
+selected_model = 'modelConv.pkl' #can be model.pkl
+model = pickle.load(open(selected_model,'rb'))
 CLASSES = ['MESSY',"CLEAN"]
 
 #routes
@@ -23,10 +24,16 @@ def predict():
             image_path = os.path.join('static', uploaded_file.filename)
             uploaded_file.save(image_path)
             img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-            img = cv2.resize(img, (128,128)).flatten()
+            if(selected_model=='modelConv.pkl'):
+                img = cv2.resize(img, (64,64)).flatten()
+            else:
+                img = cv2.resize(img, (128,128)).flatten()
             img = np.asarray(img)
             prediction = model.predict([img])
-            class_name = CLASSES[int(prediction[0])]
+            messy_clean=0
+            if(prediction[0]>0.5):
+                messy_clean=1
+            class_name = CLASSES[messy_clean]
             result = {
                 'class_name': class_name,
                 'image_path': image_path
