@@ -1,0 +1,30 @@
+body {
+  background-color: #66bfbf;
+  text-align: center;
+}
+
+.description {
+  margin-top: 50px;
+  color: #056674;
+  font-weight: 900;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.img-custom-margins {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.container {
+  margin-top: 20px;
+}

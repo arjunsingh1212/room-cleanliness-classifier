@@ -36,7 +36,7 @@ def predict():
             class_name = CLASSES[messy_clean]
             result = {
                 'class_name': class_name,
-                'image_path': image_path
+                'image_path': image_path,
             }
             return render_template('show.html',result=result)
     return render_template('index.html')
