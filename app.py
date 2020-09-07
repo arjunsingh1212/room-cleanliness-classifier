@@ -24,10 +24,10 @@ def predict():
             image_path = os.path.join('static', uploaded_file.filename)
             uploaded_file.save(image_path)
             img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-            if(selected_model=='modelConv.pkl'):
-                img = cv2.resize(img, (64,64)).flatten()
-            else:
-                img = cv2.resize(img, (128,128)).flatten()
+            # if(selected_model=='modelConv.pkl'):
+            #     img = cv2.resize(img, (64,64)).flatten()
+            # else:
+            img = cv2.resize(img, (128,128)).flatten()
             img = np.asarray(img)
             prediction = model.predict([img])
             messy_clean=0
