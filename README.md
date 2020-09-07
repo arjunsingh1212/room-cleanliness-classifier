@@ -72,8 +72,8 @@ If all the dependencies are satisfied, then you are good to go. The application 
 ```
 
 ## Prediction of Test images
-![The test image prediction](static/img/capture1.jpg)
-![](static/img/capture2.jpg)
+![The test image prediction](static/img/Capture1.jpg)
+![](static/img/Capture2.jpg)
 
 ## About the ipynb notebooks
 
