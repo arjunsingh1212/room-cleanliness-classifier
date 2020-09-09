@@ -80,6 +80,13 @@ If all the dependencies are satisfied, then you are good to go. The application 
 These include the main Machine Learning codes with proper documentations as required. I hope there would not be any problem in understanding any line of the code. There are two notebooks - One with the Logistic Regression implementation and the other with the sklearn models and CNN model.
 
 In case, the ipynb notebook fails to open in github platform, download the notebook and open via Jupyter or Google Colaboratory platform. You can also use the https://nbviewer.jupyter.org/ platform to render the jupyter notebook online using the github link (github url of notebook).
+> Links: 
+
+https://nbviewer.jupyter.org/github/arjunsingh1212/room-cleanliness-classifier/blob/master/code/Room-Cleanliness-Classifier-via-Logistic-Regression.ipynb
+
+https://nbviewer.jupyter.org/github/arjunsingh1212/room-cleanliness-classifier/blob/master/code/Room-Cleanliness-Classifier-via-Image-Classification-using-Sklearn-and-CNN-Keras-API.ipynb
+
+
 
 
 ## Use cases
